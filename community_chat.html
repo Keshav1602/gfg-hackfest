@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Chat</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-green-500 p-4 text-white">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-2xl font-bold">Sustainability</a>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="hover:underline">Home</a></li>
+                <li><a href="carbon_calculator.html" class="hover:underline">Carbon Calculator</a></li>
+                <li><a href="product_finder.html" class="hover:underline">Product Finder</a></li>
+                <li><a href="community_chat.html" class="hover:underline">Community Chat</a></li>
+                <li><a href="action_badges.html" class="hover:underline">Action Badges</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container mx-auto p-8">
+        <h1 class="text-3xl font-bold mb-6 text-green-600">Community Chat</h1>
+        <div class="bg-white p-8 rounded-lg shadow-md">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold mb-4">Join the Conversation</h2>
+                <div class="bg-gray-200 p-4 rounded-lg h-64 overflow-y-auto">
+                    <!-- Chat Messages -->
+                    <div class="mb-4">
+                        <p class="font-bold text-green-600">User1:</p>
+                        <p>How can I start an urban garden in my area?</p>
+                    </div>
+                    <div class="mb-4">
+                        <p class="font-bold text-green-600">User2:</p>
+                        <p>You should start by checking local regulations and finding a good spot with plenty of sunlight!</p>
+                    </div>
+                    <!-- Add more messages here -->
+                </div>
+            </div>
+            <div>
+                <form action="#" method="POST">
+                    <div class="mb-4">
+                        <textarea id="message" name="message" rows="3" class="w-full p-3 border border-gray-300 rounded-lg" placeholder="Type your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p>&copy; 2024 Sustainability. All rights reserved.</p>
+    </footer>
+</body>
+</html>
